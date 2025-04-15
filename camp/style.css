@@ -50,6 +50,7 @@ header {
   width: 1440px;
   height: 719px;
   padding: 0;
+  display: block;
 }
 
 #mainvisual h1 {
@@ -65,15 +66,20 @@ header {
   position: absolute;
   top: 519px;
   left: 1225px;
+  transition: all .1s;
 }
 
-#mainvisual > a:hover {
-  filter: drop-shadow(none);
+#mainvisual a:hover {
+  top: 525px;
+  left: 1230px;
 }
 
 .button {
  filter: drop-shadow(5px 8px 0 #FB8D04);
 }
+ #mainvisual > a:hover .button{
+  filter: none;
+ }
 
  
 
@@ -132,9 +138,80 @@ header {
   font-size: 36px;
   font-weight: bold;
   color: #135A2E;
+  text-align: center;
+  display: inline-block;
   border: solid 6px #135A2E;
   border-radius: 56px;
   padding: 20px;
-  margin: 0 auto;
+  position: absolute;
+  left: 618px;
+  top: 88px;
 }
+
+#tento {
+  position: absolute;
+  left: 30px;
+  top: 244px;
+  z-index: 10;
+}
+
+#family {
+  position: absolute;
+  top: 269px;
+  right: 133px;
+}
+
+#site {
+  position: absolute;
+  left: 592px;
+  bottom: 110px;
+}
+
+#annai p {
+  position: absolute;
+  left: 542px;
+  top: 245px;
+}
+
+#hata1 {
+  position: absolute;
+  left: 73px;
+  top: 20px;
+}
+
+#hata2 {
+  position: absolute;
+  top: 22px;
+  right: 84px;
+}
+
+#house {
+  position: absolute;
+  left: 14px;
+  top: 172px;
+  z-index: 20;
+}
+
+#annnai_button {
+  position: absolute;
+  right: 64px;
+  bottom: 78px;
+  filter: drop-shadow(5px 8px 0 #B3A483);
+  transition: all .1s;
+}
+
+#annnai_button a:hover {
+  right: 60px;
+  bottom: 73px; 
+}
+
+#annai > a:hover #annnai_button {
+  filter: none;
+}
+
+
+#jouhou {
+  position: relative; 
+}
+
 
